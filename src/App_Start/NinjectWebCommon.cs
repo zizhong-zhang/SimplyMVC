@@ -6,11 +6,14 @@ using WebActivator;
 namespace SimpleMVC3App.App_Start
 {
     using System;
+    using System.Net.Http;
     using System.Web;
+    using Microsoft.Extensions.Options;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
     using Ninject.Web.Common;
+    using Xero.Authorisation.Integration.Common;
 
     public static class NinjectWebCommon
     {
@@ -46,6 +49,12 @@ namespace SimpleMVC3App.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+
+                kernel.Bind<IOptions<AuthorisationOptions>>().ToConstant(Options.Create(new AuthorisationOptions()));
+                kernel.Bind<IAuthorisation>().To<Authorisation>().InRequestScope();
+                kernel.Bind<IAuthorisationProvider>().To<LegacyAuthorisationProvider>().InRequestScope();
+                kernel.Bind<IContextProvider>().To<ContextProvider>().InRequestScope();
+                kernel.Bind<ILoggerAdapter>().To<LoggerAdapter>().InRequestScope();
 
                 RegisterServices(kernel);
                 return kernel;
