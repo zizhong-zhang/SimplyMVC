@@ -174,7 +174,7 @@ namespace SimpleMVC3App.App_Start
             kernel.Bind<IContextProvider>().To<ContextProvider>().InRequestScope();
 
             kernel.Bind<ILoggerAdapter>().To<LoggerAdapter>().InRequestScope();
-            kernel.Bind<IAuthorisation>().To<Authorisation>().WhenInjectedInto<SideBySideService>().WithConstructorArgument("authorisationProvider", c =>
+            kernel.Bind<IAuthorisation>().To<Authorisation>().WhenInjectedInto<SideBySide>().WithConstructorArgument("authorisationProvider", c =>
             {
                 return c.Kernel.Get<AuthorisationProviderWithComparison>();
             });
@@ -189,7 +189,7 @@ namespace SimpleMVC3App.App_Start
             kernel.Bind<IResultPublisher>().To<AuthorisationComparisonResultPublisher>();
             kernel.Bind<ICachingContextProvider>().To<CachingContextProvider>().InRequestScope();
 
-            kernel.Bind<IAuthorisationProvider>().To<AuthorisationProviderWithComparison>().WhenInjectedInto<SideBySideService>();
+            kernel.Bind<IAuthorisationProvider>().To<AuthorisationProviderWithComparison>().WhenInjectedInto<SideBySide>();
             kernel.Bind<IServiceAuthorisationProvider>().To<ServiceAuthorisationProvider>().InRequestScope();
             kernel.Bind<ILegacyAuthorisationProvider>().To<LegacyAuthorisationProvider>().InRequestScope();
 
