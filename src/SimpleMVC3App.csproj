@@ -258,14 +258,19 @@
     <Compile Include="App_Start\LegacyAuthorisationProvider.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthOnly.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IDoAuth.cs" />
+    <Compile Include="Controllers\SideBySide.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon.ico" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -319,12 +324,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.NET.Build.Extensions.2.2.101\msbuildExtensions\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Build.Extensions.2.2.101\msbuildExtensions\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets'))" />
     <Error Condition="!Exists('..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets'))" />
-  </Target>
-  <Import Project="..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target> -->
+  </Target>  
 </Project>

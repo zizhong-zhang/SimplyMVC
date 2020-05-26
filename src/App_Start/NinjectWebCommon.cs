@@ -103,8 +103,8 @@ namespace SimpleMVC3App.App_Start
             {
                 opt.ClientId = "xero_authorisation_sample-app";
                 opt.ClientSecret = "secret";
-                opt.Authority = "https://identity-stage.xero-test.com";
-                opt.TokenEndpoint = "https://identity-stage.xero-test.com/connect/token";
+                opt.Authority = "https://identity.authz.xero-test.com";
+                opt.TokenEndpoint = "https://identity.authz.xero-test.com/connect/token";
                 opt.Scopes = new[] { "xero_authorisation.pbac" };
             });
 
@@ -151,14 +151,14 @@ namespace SimpleMVC3App.App_Start
             //TODO: read the settings host from web.config
             var authorisationOptions = ConfigurationLoader.GetOptions<AuthorisationOptions>("Authorisation", opt =>
             {
-                opt.AuthorisationServiceHost = "http://127.0.0.1:50051/";
+                opt.AuthorisationServiceHost = "https://authorisation.authz.xero-test.com";
                 opt.LaunchDarkly = new LaunchDarklyOptions
                 {
                     Flags = new Dictionary<string, string>
                     {
                         {"bills", "enable-new-authorisation-service-for-bills"},
                         {"invoices", "enable-new-authorisation-service-for-invoices"},
-                        {"quotes", "enable-new-authorisation-service-for-quotes"},
+                        {"quotes", "enable-new-authoraisation-service-for-quotes"},
                         {"purchase_orders", "enable-new-authorisation-service-for-purchase-orders"},
                         {"multicurrency", "enable-new-authorisation-service-for-multicurrency"}
                     }

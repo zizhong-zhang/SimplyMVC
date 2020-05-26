@@ -1,0 +1,31 @@
+2020-05-26 17:33:55.5438|INFO|Xero.Authorisation.Integration.Common.Authorisation|Logger configured
+2020-05-26 17:33:57.4328|INFO|Xero.Metrics.Datadog.DatadogMetrics|Configuring Metrics
+2020-05-26 17:33:57.4368|INFO|Xero.Metrics.Datadog.StatsdFactory|Creating Statsd client
+2020-05-26 17:33:57.4368|WARN|Xero.Metrics.Datadog.StatsdFactory|Metrics are disabled - using noop Statsd adapter
+2020-05-26 17:34:00.7603|DEBUG|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Requesting access token for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token
+2020-05-26 17:34:01.0096|INFO|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Access token received for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token, expiresIn=3600, time=247
+2020-05-26 17:34:01.4301|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:53:21.3445|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:58:48.5398|INFO|Xero.Authorisation.Integration.Common.Authorisation|Logger configured
+2020-05-26 17:58:52.1138|INFO|Xero.Metrics.Datadog.DatadogMetrics|Configuring Metrics
+2020-05-26 17:58:52.1138|INFO|Xero.Metrics.Datadog.StatsdFactory|Creating Statsd client
+2020-05-26 17:58:52.1258|WARN|Xero.Metrics.Datadog.StatsdFactory|Metrics are disabled - using noop Statsd adapter
+2020-05-26 17:58:54.0939|DEBUG|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Requesting access token for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token
+2020-05-26 17:58:54.5580|INFO|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Access token received for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token, expiresIn=3600, time=462
+2020-05-26 17:58:55.2320|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:58:55.2320|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:58:55.2320|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:58:55.2720|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 17:58:56.8703|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:00:49.9497|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:02:14.4302|INFO|Xero.Authorisation.Integration.Common.Authorisation|Logger configured
+2020-05-26 18:02:15.9902|INFO|Xero.Metrics.Datadog.DatadogMetrics|Configuring Metrics
+2020-05-26 18:02:15.9902|INFO|Xero.Metrics.Datadog.StatsdFactory|Creating Statsd client
+2020-05-26 18:02:16.0012|WARN|Xero.Metrics.Datadog.StatsdFactory|Metrics are disabled - using noop Statsd adapter
+2020-05-26 18:02:17.9580|DEBUG|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Requesting access token for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token
+2020-05-26 18:02:18.2164|INFO|Xero.Identity.Integration.Client.ClientCredentialsClientTokenManager|Access token received for clientId=xero_authorisation_sample-app from identityService=https://identity.authz.xero-test.com/connect/token, expiresIn=3600, time=257
+2020-05-26 18:02:18.6304|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:02:52.8603|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:04:56.2325|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:07:28.1263|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
+2020-05-26 18:08:55.3954|DEBUG|Xero.Authorisation.Integration.Common.Authorisation|Assert completed, outcome is {"Decision":"Denied", "Reasons":["InvalidAction"]}.
