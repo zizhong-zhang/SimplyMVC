@@ -33,5 +33,10 @@ namespace WebApplication14.Controllers
 
             return Content("OK");
         }
+
+        public ActionResult Ping()
+        {
+            return Content("OK");
+        }
     }
 }

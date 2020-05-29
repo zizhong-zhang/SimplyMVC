@@ -44,8 +44,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AuthorisationSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xero.Authorisation.Integration.NetFramework.Sdk.0.0.28\lib\net461\AuthorisationSdk.dll</HintPath>
+    <Reference Include="AuthorisationSdk, Version=0.0.28.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xero.Authorisation.Integration.NetFramework.Sdk.0.0.33\lib\net461\AuthorisationSdk.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
@@ -324,5 +324,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.NET.Build.Extensions.2.2.101\msbuildExtensions\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Build.Extensions.2.2.101\msbuildExtensions\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets'))" />
     <Error Condition="!Exists('..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.2.27.0\build\net45\Grpc.Core.targets'))" />
-  </Target>  
+  </Target>
 </Project>
